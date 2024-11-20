@@ -17,10 +17,10 @@ cd Dockerized-Offline-React-Apps-Using-Tarballs
 ./create-tarballs.sh
 ```
 This will:
-- Install the dependencies using npm install.
+- Install the dependencies using `npm install`.
 - Create tarballs for each dependency.
-- Save the tarballs in the tarballs/ directory.
-3. Modify the Dockerfile Use the example/Dockerfile as a reference for building your app with tarballs.
+- Save the tarballs in the `tarballs/` directory.
+3. Modify the Dockerfile Use the `example/Dockerfile` as a reference for building your app with tarballs.
 - Copy the tarballs directory into the Docker image.
-- Update the npm install command to install from tarballs.
+- Update the `npm install` command to install from tarballs.
 4. Build and run your docker container
