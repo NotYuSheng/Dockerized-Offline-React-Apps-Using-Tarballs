@@ -7,7 +7,7 @@ Learn how to cache and reuse React app dependencies offline by generating tarbal
 - Docker installed (if using containerized builds).
 
 ## Steps to follow
-1. Download the `create-tarballs.sh` script. Note to set the script to executable.
+1. Download the `create-tarballs.sh` script and ensure it is set to executable before running it.
 ```
 git clone https://github.com/NotYuSheng/Dockerized-Offline-React-Apps-Using-Tarballs.git
 cd Dockerized-Offline-React-Apps-Using-Tarballs
