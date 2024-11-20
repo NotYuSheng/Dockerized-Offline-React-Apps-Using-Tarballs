@@ -24,3 +24,17 @@ This will:
 - Copy the tarballs directory into the Docker image.
 - Update the `npm install` command to install from tarballs.
 4. Build and run your docker container
+
+### Important Note: EOL Conversion for Shell Scripts
+
+If you encounter issues running the `create-tarballs.sh` script, it may be due to differences in end-of-line (EOL) characters. This is a common issue when shell scripts are created or edited on Windows systems, as they use Windows-style EOL (`\r\n`) instead of the Unix-style EOL (`\n`) required by Linux.
+
+To resolve this issue, ensure the script uses Unix-style EOL. You can convert the script using the tool provided in [NotYuSheng/eol-converter](https://github.com/NotYuSheng/eol-converter). This applies regardless of whether you're running the script on Linux or Docker containers.
+
+#### Quick Fix
+If you suspect this issue:
+1. Use `dos2unix` (if installed) to convert the script:
+ ```bash
+ dos2unix create-tarballs.sh
+ ```
+2. Alternatively, run the [EOL converter tool](https://github.com/NotYuSheng/eol-converter) for a more streamlined fix.
