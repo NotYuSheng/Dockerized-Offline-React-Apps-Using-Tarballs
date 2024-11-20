@@ -25,7 +25,7 @@ This will:
 - Update the `npm install` command to install from tarballs.
 4. Build and run your docker container
 
-### Important Note: EOL Conversion for Shell Scripts
+## Important Note: EOL Conversion for Shell Scripts
 
 If you encounter issues running the `create-tarballs.sh` script, it may be due to differences in end-of-line (EOL) characters. This is a common issue when shell scripts are created or edited on Windows systems, as they use Windows-style EOL (`\r\n`) instead of the Unix-style EOL (`\n`) required by Linux.
 
